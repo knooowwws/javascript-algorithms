@@ -6,9 +6,7 @@
  *
 */
 
-function capitalize(str) {
-    // Напишите код здесь
-}
+function capitalize(str) { return str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ')}
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

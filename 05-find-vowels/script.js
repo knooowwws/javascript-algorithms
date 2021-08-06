@@ -9,9 +9,9 @@
  *
 */
 
-function findVowels(str) {
-    // Напишите код здесь
-}
+const vowels = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'];
+
+function findVowels(str) {return Array.from(str).filter(i => vowels.includes(i)).length }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

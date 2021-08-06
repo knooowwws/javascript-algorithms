@@ -12,6 +12,20 @@
 
 function fizzBuzz(num) {
     // Напишите код здесь
+    let array = [];
+    for (let i = 1; i <= num; i++) {
+        array[i] = i;
+        if (i % 3 == 0) {
+            array[i] = "Fizz";
+        }
+        if (i % 5 == 0) {
+            array[i] = "bar";
+        }
+        if (i % 3 == 0 && i % 5 == 0) {
+            array[i] = "FizzBuzz";
+        }
+    }
+    return array;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
