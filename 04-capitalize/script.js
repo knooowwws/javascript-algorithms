@@ -6,7 +6,14 @@
  *
 */
 
-function capitalize(str) { return str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ')}
+function capitalize(str) {
+    if (str === ' ' || str === '') {return 'null'}
+    if (str.endsWith(' ')) {
+        return null
+    }
+
+    return str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ')
+}
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

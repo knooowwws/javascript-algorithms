@@ -10,8 +10,8 @@
 
 function anagram(str1, str2) {
     // Напишите код здесь
-    let arr1 = str1.toLowerCase().split("").sort();
-    let arr2 = str2.toLowerCase().split("").sort();
+    const arr1 = str1.toLowerCase().split("").sort();
+    const arr2 = str2.toLowerCase().split("").sort();
     for (let i=0; i<arr1.length; i++) {
         if(arr1.length===arr2.length) {
             if (arr1[i]===arr2[i]){
@@ -30,5 +30,4 @@ function anagram(str1, str2) {
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(anagram('finder', 'Finder')); // true
-console.log(anagram('iiiiii', 'Finder')); // true
 console.log(anagram('hello', 'bye')); // false

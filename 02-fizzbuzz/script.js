@@ -19,7 +19,7 @@ function fizzBuzz(num) {
             array[i] = "Fizz";
         }
         if (i % 5 == 0) {
-            array[i] = "bar";
+            array[i] = "Buzz";
         }
         if (i % 3 == 0 && i % 5 == 0) {
             array[i] = "FizzBuzz";
@@ -30,4 +30,4 @@ function fizzBuzz(num) {
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-console.log(fizzBuzz(15));
+console.log(fizzBuzz(150));
