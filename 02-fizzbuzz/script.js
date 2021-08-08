@@ -24,8 +24,8 @@ function fizzBuzz(num) {
         if (i % 3 == 0 && i % 5 == 0) {
             array[i] = "FizzBuzz";
         }
+        console.log(array[i])
     }
-    return array;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

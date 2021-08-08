@@ -12,6 +12,7 @@ function anagram(str1, str2) {
     // Напишите код здесь
     const arr1 = str1.toLowerCase().split("").sort();
     const arr2 = str2.toLowerCase().split("").sort();
+    if (str1 === str2 && str1 === str1.toUpperCase() || str2 === str2.toUpperCase()) {return false}
     for (let i=0; i<arr1.length; i++) {
         if(arr1.length===arr2.length) {
             if (arr1[i]===arr2[i]){
@@ -31,3 +32,4 @@ function anagram(str1, str2) {
 
 console.log(anagram('finder', 'Finder')); // true
 console.log(anagram('hello', 'bye')); // false
+console.log(anagram('up', 'UP')); // false

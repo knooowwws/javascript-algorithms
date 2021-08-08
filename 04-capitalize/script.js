@@ -7,9 +7,9 @@
 */
 
 function capitalize(str) {
-    if (str === ' ' || str === '') {return 'null'}
+    if (str === ' ' || str === '') {return 'str'}
     if (str.endsWith(' ')) {
-        return null
+        return str[0].toUpperCase() + str.slice(1)
     }
 
     return str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ')
@@ -18,3 +18,5 @@ function capitalize(str) {
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(capitalize('молодость всё простит')); // "Молодость Всё Простит"
+console.log(capitalize('молодость ')); // "Молодость Всё Простит"
+console.log(capitalize(' ')); // "Молодость Всё Простит"
